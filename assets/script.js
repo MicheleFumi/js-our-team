@@ -60,6 +60,8 @@ const formEl = document.querySelector('form')
 
 
 
+
+
 function AddTeamElements(team) {
   const { name, role, email, img } = team
 
@@ -92,13 +94,14 @@ for (let i = 0; i < teamMembers.length; i++) {
 
 formEl.addEventListener('submit', (e) =>{
   e.preventDefault()
-let name =document.getElementById('name').value
-let email =document.getElementById('email').value
-let image =document.getElementById('image').value
-let role =document.getElementById('role').value
+let name = document.getElementById('name').value
+let email = document.getElementById('email').value
+let image = document.getElementById('image').value
+let role = document.getElementById('role').value
 
 const new_member = {name, email, image, role}
 
-new_member.AddTeamElements(teams)
-teamMembersEl.insertAdjacentHTML('beforeend'(on_markup))
+const on_markup= AddTeamElements(new_member)
+formEl.insertAdjacentHTML('beforeend',on_markup)
 })
+
