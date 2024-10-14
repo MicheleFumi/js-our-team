@@ -50,3 +50,28 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+
+
+const teamMembersEl=document.getElementById('teamMembers')
+console.log(teamMembersEl);
+
+
+
+
+function AddTeamElements(team) {
+  const {name , role, email, img} = team
+
+ return`
+  <div class="col bg-dark text-white px-0">
+                        <img class="float-start me-4" src="${img}" alt="">
+                        <div class="py-4">
+                            <h2>${name}</h2>
+                            <div class="pb-3">${role}</div>
+                            <div><strong>${email}</strong></div>
+                        </div>
+                    </div>
+ `
+  
+  
+}
