@@ -62,11 +62,11 @@ function AddTeamElements(team) {
   const { name, role, email, img } = team
 
   return `
-  <div class="col-6 col-md-4 col-xs-12 my-4">
+  <div class="col-xl-4 col-lg-6 col-xs-12 my-4">
       <div class="card flex-row bg-dark text-white px-0 ">
-        <img class=" me-4" src="${img}" alt="">
-        <div class="card-body py-4">
-            <h2>${name}</h2>
+        <img src="${img}" alt="">
+        <div class="card-body">
+            <h3>${name}</h3>
             <div class="pb-3">${role}</div>
             <div><strong>${email}</strong></div>
         </div>
