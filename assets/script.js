@@ -61,7 +61,6 @@ const formEl = document.querySelector('form')
 
 
 
-
 function AddTeamElements(team) {
   const { name, role, email, img } = team
 
@@ -96,10 +95,10 @@ formEl.addEventListener('submit', (e) =>{
   e.preventDefault()
 let name = document.getElementById('name').value
 let email = document.getElementById('email').value
-let image = document.getElementById('image').value
+let img = document.getElementById('img').value
 let role = document.getElementById('role').value
 
-const new_member = {name, email, image, role}
+const new_member = {name, email, img, role}
 
 const on_markup= AddTeamElements(new_member)
 formEl.insertAdjacentHTML('beforeend',on_markup)
