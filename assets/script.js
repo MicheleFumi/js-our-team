@@ -67,7 +67,7 @@ function AddTeamElements(team) {
   return `
   <div class="col-xl-4 col-lg-6 col-xs-12 my-4">
                         <div class="card flex-row bg-dark text-white ">
-                            <img src="${img}" alt="">
+                            <img  class="rounded" src="${img}" alt="">
                             <div class="card-body ">
                                 <h3>${name}</h3>
                                 <div class="pb-3">${role}</div>
@@ -103,4 +103,6 @@ const new_member = {name, email, img, role}
 const on_markup= AddTeamElements(new_member)
 formEl.insertAdjacentHTML('beforeend',on_markup)
 })
+
+
 
