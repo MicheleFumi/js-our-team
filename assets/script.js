@@ -56,6 +56,8 @@ const teamMembers = [
 const teamMembersEl = document.getElementById('teamMembers')
 console.log(teamMembersEl);
 
+const formEl = document.querySelector('form')
+
 
 
 function AddTeamElements(team) {
@@ -63,15 +65,15 @@ function AddTeamElements(team) {
 
   return `
   <div class="col-xl-4 col-lg-6 col-xs-12 my-4">
-      <div class="card flex-row bg-dark text-white px-0 ">
-        <img src="${img}" alt="">
-        <div class="card-body">
-            <h3>${name}</h3>
-            <div class="pb-3">${role}</div>
-            <div><strong>${email}</strong></div>
-        </div>
-    </div>
-  </div>
+                        <div class="card flex-row bg-dark text-white ">
+                            <img src="${img}" alt="">
+                            <div class="card-body ">
+                                <h3>${name}</h3>
+                                <div class="pb-3">${role}</div>
+                                <div><strong>${email}</strong></div>
+                            </div>
+                        </div>
+                    </div>
  `
 
 
@@ -81,8 +83,19 @@ for (let i = 0; i < teamMembers.length; i++) {
   const teamCard = teamMembers[i];
 
 
-  const markup = AddTeamElements(teamCard)
-  teamMembersEl.innerHTML += markup
+  const on_markup = AddTeamElements(teamCard)
+  teamMembersEl.innerHTML += on_markup
 
 
 }
+
+
+formEl.addEventListener('submit', (e) =>{
+  e.preventDefault()
+const name =document.getElementById('name')
+const last_name =document.getElementById('last-name')
+const email =document.getElementById('email')
+const image =document.getElementById('image')
+
+
+})

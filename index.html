@@ -14,21 +14,62 @@
 
 <body>
     <header>
-        <div class="container"></div>
-        <h1 class="text-danger text-center py-4">Meet our Team</h1>
+        <div class="container">
+            <h1 class="text-danger text-center py-4">Meet our Team</h1>
+        </div>
     </header>
     <main>
-        <div class="px-5">
+
+
+
+
+        <div class="container">
             <p class="text-center fs-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. A est quasi cumque sint
                 itaque veritatis nisi autem deserunt, tenetur iste dolores maxime, exercitationem illo consequatur
                 corporis minima facilis nulla at?</p>
-            <form action="">
-                <div id="teamMembers" class="row">
 
-                   
+            <form action="">
+                <h2 class="text-center">Input new member</h2>
+                <div class="row shadow p-3 mb-5 bg-white rounded">
+                    <div class="col-4 col-md-6 col-sm-12 mb-3">
+                        <label for="image" class="form-label">image</label>
+                        <input type="text" class="form-control" name="image" id="image" aria-describedby="helpId"
+                            placeholder="Input new member profile image" />
+
+                    </div>
+
+
+                    <div class="col-4 col-md-6 col-sm-12 mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" name="name" id="name" aria-describedby="helpId"
+                            placeholder="Input new member first name" />
+
+                    </div>
+
+                    <div class="col-4 col-md-6 col-sm-12 mb-3">
+                        <label for="last-name" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" name="last-name" id="last-name" aria-describedby="helpId"
+                            placeholder="Input new member lastname" />
+
+                    </div>
+
+                    <div class="col-4 col-md-6 col-sm-12 mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" class="form-control" name="email" id="email" aria-describedby="helpId"
+                            placeholder="Input new member email" />
+
+                    </div>
+                    <div class="col"> <a name="submit" id="submit" class="btn btn-primary" href="#"
+                            role="button">submit</a>
+                    </div>
+                </div>
+
+                <div id="teamMembers" class="row">
+                    
+                </div>
             </form>
         </div>
-        
+
 
     </main>
     <script src="./assets/script.js"></script>
