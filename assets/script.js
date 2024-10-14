@@ -92,10 +92,13 @@ for (let i = 0; i < teamMembers.length; i++) {
 
 formEl.addEventListener('submit', (e) =>{
   e.preventDefault()
-const name =document.getElementById('name')
-const last_name =document.getElementById('last-name')
-const email =document.getElementById('email')
-const image =document.getElementById('image')
+let name =document.getElementById('name').value
+let email =document.getElementById('email').value
+let image =document.getElementById('image').value
+let role =document.getElementById('role').value
 
+const new_member = {name, email, image, role}
 
+new_member.AddTeamElements(teams)
+teamMembersEl.insertAdjacentHTML('beforeend'(on_markup))
 })
